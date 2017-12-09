@@ -19,6 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Camera } from '@ionic-native/camera';
+import { Network } from '@ionic-native/network';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 import { IonicStorageModule } from '@ionic/storage';
 import { DishProvider } from '../providers/dish/dish';
@@ -67,6 +68,7 @@ import { baseURL } from '../shared/baseurl';
     SocialSharing,
     LocalNotifications,
     Camera,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DishProvider,
     LeaderProvider,
