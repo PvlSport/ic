@@ -17,5 +17,33 @@
 
 
 <ion-content padding>
+  <ion-card>
+    <ion-card-header color="primary">
+      Location Information
+    </ion-card-header>
+    <ion-card-content>
+      <address>
+        asdasdads<br>
+        Astana<br>
+        <ion-icon name="call"></ion-icon>: 4324 <br>
+        <ion-icon name="print"></ion-icon>: 2342 <br>
+        <ion-icon name="mail"></ion-icon>: asdasd <br>
+      </address>
+    </ion-card-content>
 
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="phone"></ion-icon>
+          <div>Call</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-left clear small (click)="sendEmail()">
+          <ion-icon name="mail"></ion-icon>
+          <div>Email</div>
+        </button>
+      </ion-col>
+    </ion-row>    
+  </ion-card>
 </ion-content>
